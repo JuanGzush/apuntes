@@ -1,0 +1,38 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    margin: 5rem;
+}
+
+p {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+table {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+caption {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+th,
+td {
+    border: 1px solid transparent;
+    padding: 1rem;
+}
+
+th {
+    background-color: yellow;
+}
+
+td {
+    background-color: orange;
+}

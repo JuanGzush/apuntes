@@ -1,0 +1,109 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+    padding-right: .5rem;
+}
+
+button,
+table {
+    margin: 0 auto;
+}
+
+button,
+table,
+a {
+    width: max-content;
+}
+
+button,
+th,
+td,
+a {
+    padding: 1rem;
+}
+
+button,
+a {
+    cursor: pointer;
+    display: block;
+}
+
+button {
+    font-size: 1rem;
+    border: 0;
+    border-bottom: 5px solid darkblue;
+    color: whitesmoke;
+    background-color: darkcyan;
+}
+
+form > button {
+    margin-bottom: 3rem;
+}
+
+caption,
+p {
+    font-weight: bold;
+}
+
+caption {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+th {
+    background-color: greenyellow;
+}
+
+td {
+    background-color: yellow;
+}
+
+ul,
+li {
+    padding: 0;
+}
+
+h2,
+h3,
+p {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+li:first-of-type {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+li:nth-of-type(2),
+hr {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    margin-top: 5rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 3rem auto;
+    border-bottom: 5px solid darkblue;
+    color: whitesmoke;
+    background-color: darkcyan;
+}
+
+a:hover {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,71 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: lightblue;
+}
+
+main,
+ol {
+    margin: 0 auto;
+}
+
+main {
+    width: 80%;
+    border: 3px solid black;
+    border-radius: 1.5rem;
+    padding: 3rem;
+    overflow-x: auto;
+    background-color: ivory;
+}
+
+ol,
+h1,
+p,
+a {
+    width: max-content;
+}
+
+ol,
+li {
+    width: 100%;
+}
+
+ol {
+    list-style-type: upper-roman;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 3rem auto;
+    color: darkblue;
+}
+
+h1:hover {
+    transform: skew(20deg);
+    transition: all 2s ease 0.3s;
+}
+
+p,
+a {
+    font-size: 1.1rem;
+}
+
+p {
+    width: 90%;
+    min-width: 500px;
+    color: grey;
+}
+
+a {
+    font-weight: bold;
+    color: darkolivegreen;
+}

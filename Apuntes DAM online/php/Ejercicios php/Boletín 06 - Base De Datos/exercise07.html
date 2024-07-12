@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ejercicio 07</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style_exercises.css'>
+</head>
+
+<body>
+<header>
+    <h2>ENTRADA DE DATOS DE HOSPITALES</h2>
+    <hr/>
+</header>
+<main>
+    <form action="exercise07.php" method="POST">
+        <ul>
+            <li>
+                <label for="cod_hosp">Número de hospital:</label>
+                <input name="hosp_code" id="cod_hosp" type="text" size="5"/>
+            </li>
+            <li>
+                <label for="nombre">Nombre:</label>
+                <input name="name" id="nombre" type="text" size="15"/>
+            </li>
+            <li>
+                <label for="direccion">Dirección:</label>
+                <input name="direction" id="direccion" type="text" size="15"/>
+            </li>
+            <li>
+                <label for="num_plazas">Número de plazas:</label>
+                <input name="num_places" id="num_plazas" type="text" size="5"/>
+            </li>
+            <li>
+                <button type="submit" name="insert">Insertar hospital</button>
+                <button type="reset" name="cancel">Cancelar entrada</button>
+            </li>
+            <li>
+                <button type="submit" name="list">Listar hospitales</button>
+            </li>
+        </ul>
+    </form>
+    <a href="index.html">Volver</a>
+</main>
+</body>
+
+</html>

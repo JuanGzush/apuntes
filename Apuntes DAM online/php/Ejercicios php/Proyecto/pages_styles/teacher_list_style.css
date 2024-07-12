@@ -1,0 +1,141 @@
+* {
+    box-sizing: content-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+div.flex_container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 12rem;
+    background-color: darkcyan;
+}
+
+main {
+    flex-grow: 1;
+    background-color: whitesmoke;
+}
+
+ul {
+    width: 50%;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    border: 5px solid darkblue;
+    border-radius: 1.5rem;
+    background-color: darkcyan;
+}
+
+li {
+    list-style-type: none;
+    color: whitesmoke;
+}
+
+li:not(:last-of-type) {
+    text-align: center;
+}
+
+li:first-of-type,
+li:nth-of-type(2),
+li:last-of-type {
+    margin: .5rem 0;
+}
+
+li:first-of-type {
+    font-size: 2rem;
+}
+
+li:nth-last-of-type(2) {
+    margin: .5rem 0 1.5rem;
+}
+
+li:last-of-type {
+    display: flex;
+}
+
+footer {
+    background-color: darkcyan;
+}
+
+a {
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a[href="login.html"],
+a[href="panel.php?submit=submit"] {
+    display: block;
+    width: max-content;
+    margin: 5rem auto 3rem;
+    padding: 1rem;
+    border-bottom: 5px solid darkblue;
+    background-color: darkcyan;
+}
+
+li > div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+a.insert {
+    display: block;
+    align-self: end;
+    width: 30px;
+    height: 30px;
+    margin-right: 2rem;
+    border-radius: 100%;
+    padding: 1rem;
+    background: url("../images/add_icon.jpg") center/ cover no-repeat;
+}
+
+a.edit {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding: .3rem;
+    background: url("../images/edit_icon.png") center/ cover no-repeat;
+}
+
+a.delete {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding: .3rem;
+    background: url("../images/delete_icon.jpg") center / cover no-repeat;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2.error {
+    text-align: center;
+    color: red;
+}
+
+h4 {
+    text-align: center;
+    color: whitesmoke;
+}

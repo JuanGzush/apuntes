@@ -1,0 +1,58 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    margin: 5rem 0;
+}
+
+form,
+ul {
+    width: 50%;
+}
+
+form,
+button {
+    margin: 0 auto;
+}
+
+label {
+    display: inline-block;
+    width: 5rem;
+}
+
+button {
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    width: max-content;
+    /* Para resetear el borde por defecto */
+    border: 0;
+    border-bottom: 5px solid darkblue;
+    padding: 1rem;
+    color: whitesmoke;
+    background-color: darkcyan;
+}
+
+button:hover {
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto 5rem;
+    padding: 0;
+}
+
+li:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+}

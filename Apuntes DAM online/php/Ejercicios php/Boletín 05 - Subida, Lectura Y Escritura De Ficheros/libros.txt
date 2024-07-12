@@ -1,0 +1,11 @@
+Título: El Señor de los Anillos
+Tipo: Colección
+Observaciones: Obra clásica de la fantasía literaria
+--------------------------------------------------
+Título: Dune
+Tipo: Ejemplar
+Observaciones: Novela de ciencia ficción más vendida de la historia
+--------------------------------------------------
+Título: El Lazarillo de Tormes
+Tipo: Ejemplar
+Observaciones: Obra representativa de la novela picaresca española

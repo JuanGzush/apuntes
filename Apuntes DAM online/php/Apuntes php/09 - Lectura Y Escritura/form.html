@@ -1,0 +1,50 @@
+<html lang="es">
+
+<head>
+    <title> Subir m&aacute;s de un fichero</title>
+</head>
+
+<body>
+<form action="file_upload.php" method="post" enctype="multipart/form-data">
+    Enviar estos ficheros:<br/>
+    <!-- Es importante añadir el [] al name para que el PHP gestione cada clave
+        como un array
+        Array
+        (
+            [name_files] => Array
+                (
+                    [name] => Array
+                        (
+                            [0] => fichero_3.txt
+                            [1] => fichero_2.txt
+                            [2] => fichero_1.txt
+                        )
+        .....
+          Si no subo más de uno:
+                Array
+                (
+                    [name_files] => Array
+                        (
+                            [name] => fichero_3.txt
+
+
+      -->
+    <input type="file" name="name_files[]" multiple/><br/>
+    <input type="submit" value="Enviar ficheros"/>
+</form>
+</body>
+
+</html>
+
+<!-- Esta sería otra forma de hacerlo sin usar multiple(atributo del input)
+tendríamos que añadir tantos inputs como ficheros queramos añadir.
+También es necesario poner []
+En este caso me aparecerán dos botones en lugar de uno.
+
+-->
+<form action="file-upload.php" method="post" enctype="multipart/form-data">
+    Enviar estos ficheros:<br/>
+    <input name="name_file[]" type="file"/><br/>
+    <input name="name_file[]" type="file"/><br/>
+    <input type="submit" value="Enviar ficheros"/>
+</form>

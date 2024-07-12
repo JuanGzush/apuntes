@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Boletín 05 - Subida, Lectura Y Escritura De Ficheros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="style_libros.css"
+    />
+</head>
+
+<body>
+<header>
+    <h1>inserta los datos del libro</h1>
+</header>
+<main>
+    <form
+            method="post"
+            action="libros_guardar.php"
+            enctype="multipart/form-data"
+    >
+        <ul>
+            <li>
+                <label for="titulo">Título:</label>
+                <input type="text" name="title" id="titulo"/>
+            </li>
+            <li>
+                <p>Tipo:</p>
+                <input type="radio" name="type" id="ejemplar" value="Ejemplar"/>
+                <label for="ejemplar">Ejemplar</label>
+                <input type="radio" name="type" id="collection" value="Colección"/>
+                <label for="collection">Colección</label>
+            </li>
+            <li>
+                <label for="observaciones">Observaciones:</label>
+                <textarea
+                        name="observations"
+                        id="observaciones"
+                        cols="50"
+                        rows="10"
+                ></textarea>
+            </li>
+            <li>
+                <button type="submit" name="send">Guardar datos del libro</button>
+            </li>
+        </ul>
+    </form>
+    <a href="libros_datos.php">Mostrar los datos guardados</a>
+</main>
+</body>
+
+</html>

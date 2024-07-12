@@ -1,0 +1,40 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: lightblue;
+}
+
+ul {
+    width: 50%;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 1.5rem;
+    padding: 3rem;
+    background-color: ivory;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 3rem auto;
+    color: darkblue;
+}
+
+h1:hover {
+    transform: skew(20deg);
+    transition: all 2s ease 0.3s;
+}
+
+a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: darkolivegreen;
+}

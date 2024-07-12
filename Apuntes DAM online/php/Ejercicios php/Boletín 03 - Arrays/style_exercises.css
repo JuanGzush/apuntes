@@ -1,0 +1,90 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header,
+footer {
+    text-transform: capitalize;
+}
+
+main {
+    padding: 3rem;
+}
+
+section.output {
+    border-bottom: 1px solid grey;
+}
+
+article {
+    margin: 2rem 0;
+}
+
+footer,
+h2 {
+    text-align: center;
+}
+
+h1,
+h2 {
+    margin: 0 auto;
+    color: darkgrey;
+}
+
+h1,
+p,
+a {
+    font-size: 1.1rem;
+}
+
+h1,
+p {
+    color: grey;
+}
+
+h1,
+a {
+    width: max-content;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+h2 p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 3rem;
+    border-bottom: 5px solid darkblue;
+    padding: 1rem;
+    color: whitesmoke;
+    background-color: darkcyan;
+}
+
+a:hover {
+    font-size: 1.5rem;
+}
+
+/* Estilos de la tabla */
+
+div.table-container {
+    width: max-content;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 1rem;
+}

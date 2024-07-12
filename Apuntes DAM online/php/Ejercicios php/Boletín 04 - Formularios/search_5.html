@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Boletín Formularios - Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="style_search.css"/>
+</head>
+
+<body>
+<header>
+    <h1>Search</h1>
+</header>
+<main>
+    <form action="searchController_5.php" method="post" enctype="multipart/form-data">
+        <ul>
+            <li>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="firstname" maxlength="15" size="30"/>
+            </li>
+            <li>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="surname" maxlength="30" size="30"/>
+            </li>
+
+            <li>
+                <label for="edad">Edad</label>
+                <input type="text" id="edad" name="age" maxlength="3" size="3"/>
+            </li>
+            <li>
+                <label for="operador_edad">Operador Edad</label>
+                <select name="operator" id="operador_edad">
+                    <option value="">Elige una opción</option>
+                    <option value="greater">Mayor igual</option>
+                    <option value="lower">Menor igual</option>
+                    <option value="equals">Igual</option>
+                </select>
+            </li>
+            <li>
+                <label for="pais">País</label>
+                <select name="country[]" id="pais" multiple>
+                    <option value="Wales">Gales</option>
+                    <option value="USA">Estados Unidos</option>
+                    <option value="Ireland">Irlanda</option>
+                    <option value="Scotland">Escocia</option>
+                    <option value="Australia">Australia</option>
+                    <option value="England">Inglaterra</option>
+                    <option value="all_countries">Todos los países</option>
+                </select>
+            </li>
+        </ul>
+        <button type="submit" name="submit">Enviar</button>
+    </form>
+</main>
+</body>
+
+</html>

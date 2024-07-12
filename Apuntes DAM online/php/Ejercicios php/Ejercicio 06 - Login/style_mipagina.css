@@ -1,0 +1,110 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(imagenes_estilo/01.jpg) 0 0 / cover no-repeat gray;
+    background-blend-mode: multiply;
+}
+
+form {
+    width: 40%;
+    min-width: 30rem;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+input,
+button {
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem;
+}
+
+input {
+    text-align: start;
+    width: 24rem;
+    margin-right: -4px;
+    border-radius: 0.5rem 0 0 0.5rem;
+    color: dodgerblue;
+    background-color: skyblue;
+}
+
+input:focus {
+    outline: none;
+}
+
+button[name="remove_button"],
+h2,
+#message {
+    text-transform: capitalize;
+}
+
+button[name="remove_button"],
+#message {
+    visibility: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:not(button[name="remove_button"]) {
+    font-weight: bold;
+    width: 5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    color: white;
+    background-color: royalblue;
+}
+
+button[name="remove_button"] {
+    width: 6rem;
+    margin: 1rem auto;
+    color: red;
+    background-color: transparent;
+}
+
+button:hover:not(button[name="remove_button"]) {
+    background-color: lightblue;
+}
+
+ul {
+    margin: 2rem 0 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+h2,
+#message {
+    color: darkblue;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+#message {
+    font-size: 0.9rem;
+}
+
+/* Estilos del enlace */
+a {
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    width: max-content;
+    margin: 3rem auto 6rem;
+    border-bottom: 5px solid darkblue;
+    padding: 1rem;
+    color: whitesmoke;
+    background-color: darkcyan;
+}
+
+a:hover {
+    font-size: 1.5rem;
+}

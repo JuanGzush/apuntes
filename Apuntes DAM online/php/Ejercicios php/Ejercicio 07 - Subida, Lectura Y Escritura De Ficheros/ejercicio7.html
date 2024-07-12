@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Ejercicio 07 - Ficheros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="ejercicio7.css"
+    />
+</head>
+
+<body>
+<main>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <ul>
+            <li>
+                <p>Seleccione los ficheros que desea subir</p>
+            </li>
+            <li>
+                <label for="ficheros"></label>
+                <!-- [] por ser un input file múltiple -->
+                <input type="file" id="ficheros" name="name_files[]" multiple/>
+            </li>
+            <li>
+                <button name="send">Subir fichero</button>
+            </li>
+        </ul>
+    </form>
+</main>
+</body>
+
+</html>

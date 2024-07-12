@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../pages_styles/login_style.css'>
+</head>
+
+<body>
+<div class="flex_container">
+    <header>
+        <h1>login</h1>
+        <h2>Introduce tu usuario y tu contraseña para dirigirte al panel de administración</h2>
+    </header>
+    <main>
+        <form action="../processes/process_login.php" method="post">
+            <ul>
+                <li>
+                    <label for="user">Usuario</label>
+                    <input type="text" id="user" name="user" maxlength="30" size="30"/>
+
+                </li>
+                <li>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" maxlength="30" size="30"/>
+                </li>
+            </ul>
+            <button type="submit" name="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <h4>© Iván López Bermúdez</h4>
+    </footer>
+</div>
+</body>
+
+</html>

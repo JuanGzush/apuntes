@@ -1,0 +1,73 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    margin: 5rem 0 3rem;
+}
+
+form,
+button,
+a {
+    margin: 0 auto;
+}
+
+form,
+ul {
+    width: 50%;
+}
+
+li:nth-last-of-type(2) label,
+button,
+a {
+    display: block;
+}
+
+label {
+    display: inline-block;
+    width: 5rem;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border: 2px solid darkcyan;
+    outline: none;
+    box-shadow: 0 0 5px darkblue;
+}
+
+button,
+a {
+    font-size: 1rem;
+    cursor: pointer;
+    width: max-content;
+    /* Para resetear el borde por defecto del button*/
+    border: 0;
+    border-bottom: 5px solid darkblue;
+    padding: 1rem;
+    color: whitesmoke;
+    background-color: darkcyan;
+}
+
+button:hover,
+a:hover {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto 5rem;
+    padding: 0;
+}
+
+li:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}

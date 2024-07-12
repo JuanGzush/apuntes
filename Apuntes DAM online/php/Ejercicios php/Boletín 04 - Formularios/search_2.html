@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Boletín Formularios - Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="style_search_2.css"/>
+</head>
+
+<body>
+<header>
+    <h1>Search</h1>
+</header>
+<main>
+    <form action="searchController_2.php" method="post" enctype="multipart/form-data">
+        <ul>
+            <li>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="firstname" maxlength="15" size="30"/>
+            </li>
+            <li>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="surname" maxlength="30" size="30"/>
+            </li>
+
+            <li>
+                <label for="edad">Edad</label>
+                <input type="text" id="edad" name="age" maxlength="3" size="3"/>
+            </li>
+            <li>
+                <label for="operador_edad">Operador Edad</label>
+                <select name="operator" id="operador_edad">
+                    <option value="">Elige una opción</option>
+                    <option value="greater">Mayor igual</option>
+                    <option value="lower">Menor igual</option>
+                    <option value="equals">Igual</option>
+                </select>
+            </li>
+            <li>
+                <p>País:</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <input type="checkbox" id="gales" name="country0" value="Wales"/>
+                <label for="gales">Gales</label>
+            </li>
+            <li>
+                <input type="checkbox" id="eeuu" name="country1" value="USA"/>
+                <label for="eeuu">USA</label>
+            </li>
+            <li>
+                <input type="checkbox" id="irlanda" name="country2" value="Ireland"/>
+                <label for="irlanda">Irlanda</label>
+            </li>
+            <li>
+                <input type="checkbox" id="escocia" name="country3" value="Scotland"/>
+                <label for="escocia">Escocia</label>
+            </li>
+            <li>
+                <input type="checkbox" id="australia" name="country4" value="Australia"/>
+                <label for="australia">Australia</label>
+            </li>
+            <li>
+                <input type="checkbox" id="inglaterra" name="country5" value="England"/>
+                <label for="inglaterra">Inglaterra</label>
+            </li>
+            <li>
+                <input type="checkbox" id="todos_los_paises" name="country6" value="all_countries"/>
+                <label for="todos_los_paises">Todos los países</label>
+            </li>
+        </ul>
+        <button type="submit" name="send">Enviar</button>
+    </form>
+</main>
+</body>
+
+</html>

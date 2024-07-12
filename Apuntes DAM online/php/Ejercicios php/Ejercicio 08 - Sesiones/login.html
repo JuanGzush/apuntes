@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Ejercicio 08 - Sesiones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="login_style.css"
+    />
+</head>
+
+<body>
+<main>
+    <header>
+        <h1>Introduce tus datos</h1>
+    </header>
+    <form action="process.php" method="get">
+        <ul>
+            <li>
+                <label for="user">Login</label>
+                <input type="text" id="user" name="login"/>
+            </li>
+            <li>
+                <label for="password">Password</label>
+                <input type="text" id="password" name="password"/>
+            </li>
+            <li>
+                <button type="submit" name="send">Ingresar</button>
+            </li>
+        </ul>
+    </form>
+</main>
+</body>
+
+</html>
